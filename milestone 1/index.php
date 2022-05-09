@@ -14,29 +14,10 @@ include 'database.php';
     <title>Ajax Dischi</title>
   </head>
   <body class="bg-color">
-    <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="logo" id="spotify-logo-header">
-    </header>
+    <?php require __DIR__ . '/partials/header.php';  ?> 
     
-    <main class="pt-5">
-        <div class="col-7 mx-auto d-flex flex-wrap pt-5">
-            <?php foreach ($database as $singleElement) {?>
-            <div class="multimediaCard text-center mb-4">
-                <div>
-                    <img class="poster-img p-3" src="<?= $singleElement["poster"] ?>">
-                </div>
-                
-                <div class="multimediaDescription">
-                    <h3 class="text-white text-uppercase fs-5"><?=$singleElement["title"]?></h3>
-                    <div class="mt-4 text-secondary fw-bold">
-                        <p class="song-author mb-0"><?=$singleElement["author"]?></p>
-                        <p class="song-year"><?=$singleElement["year"]?></p>
-                    </div>
-                </div>
-            </div>
-            <?php } ?>
-        </div>
-    </main>
+    <?php require __DIR__ . '/partials/main-php.php';  ?>
+
 
   </body>
 </html>
