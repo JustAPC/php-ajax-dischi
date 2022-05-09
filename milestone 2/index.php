@@ -37,7 +37,7 @@
             <div class="multimediaDescription">
               <h3 class="text-white text-uppercase fs-5">{{ elm.title }}</h3>
               <div class="mt-4 text-secondary fw-bold">
-                <p class="song-author mb-0">{{ elm.author }}?></p>
+                <p class="song-author mb-0">{{ elm.author }}</p>
                 <p class="song-year">{{ elm.year }}</p>
               </div>
             </div>
