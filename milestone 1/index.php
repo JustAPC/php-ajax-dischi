@@ -1,19 +1,6 @@
 <?php 
 include '../database.php';
 
-function multimediaGenerator ($database) {
-    
-    foreach ($database as $singleElement) {
-        echo '<div class="multimediaCard">';
-        echo 
-        '<div class="posterImg"><img src="' . $singleElement["poster"] . '"></div>
-        <div class="multimediaDescription"><h3 class="song-title">' . $singleElement["title"] . '<h3>
-        <p class="song-author">' . $singleElement["author"] . '</p>
-        <p class="song-year"' . $singleElement["year"] . "</p>";
-        echo '</div>';
-    }
-};
-
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +11,7 @@ function multimediaGenerator ($database) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Ajax Dischi</title>
   </head>
   <body class="bg-color">
@@ -51,6 +39,5 @@ function multimediaGenerator ($database) {
         </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
